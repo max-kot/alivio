@@ -1,0 +1,50 @@
+.story {
+	background: #245852;
+	padding-top: 229px;
+	padding-bottom: 177px;
+	&__body {
+		display: flex;
+	}
+
+	&__content {
+		color: #fff;
+		margin-right: 31px;
+		max-width: 580px;
+	}
+
+	&__title {
+		color: #fff;
+		& + * {
+			margin-top: 33px;
+		}
+	}
+
+	&__text {
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 157%;
+		& + * {
+			margin-top: 57px;
+		}
+	}
+
+	&__btn {
+	}
+
+	&__video {
+		width: 100%;
+		overflow: hidden;
+		border-radius: 16px;
+	}
+}
+.container {
+}
+
+.story-video {
+	&__btn {
+	}
+	&__btn-svg {
+	}
+	&__overlay {
+	}
+}

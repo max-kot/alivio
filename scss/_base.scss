@@ -1,0 +1,92 @@
+/*--- Base Styles ---*/
+body {
+	font-family: "Lato", sans-serif;
+	font-size: 1.25rem;
+	font-weight: 400;
+	color: #424242;
+}
+
+/*--- Utility ---*/
+.none {
+	display: none !important;
+}
+
+.visually-hidden {
+	// делает элемент скрытым, но он по-прежнему на странице
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+	display: block;
+	margin-left: -10000px;
+	background: transparent;
+	font-size: 0;
+}
+
+/*--- Grid ---*/
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	max-width: 1400px;
+	padding: 0 15px;
+	margin: 0 auto;
+	&--wide {
+		max-width: 1537px;
+	}
+}
+.btn,
+a.btn {
+	padding: 13px;
+	min-width: 227px;
+	min-height: 65px;
+	background: #01996d;
+	border: 1px solid #01996d;
+	border-radius: 4px;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 125%;
+	transition: all 0.3s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&:hover {
+		color: #01996d;
+		background: #fff;
+	}
+}
+.btn--small {
+	min-height: 51px;
+	min-width: 183px;
+}
+.--ibg {
+	position: relative;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+.title {
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 157%;
+	color: #424242;
+}
+.subtitle {
+	font-family: "Georgia", serif;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 157%;
+	color: #01996d;
+}
