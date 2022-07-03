@@ -1,0 +1,41 @@
+.footer {
+	background-color: #245852;
+	padding-top: 104.76px;
+	padding-bottom: 144px;
+	&__body {
+	}
+
+	&__logo {
+		& + * {
+			margin-top: 74.52px;
+		}
+	}
+
+	&__logo-link {
+	}
+
+	&__menu {
+	}
+}
+.footer-menu {
+	&__list {
+		color: #fff;
+		font-weight: 500;
+		font-size: 25px;
+		line-height: calc(30 / 25 * 100%);
+	}
+
+	&__item {
+		transition: opacity 0.2s;
+		opacity: 0.8;
+		& + * {
+			margin-top: 60px;
+		}
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	&__link {
+	}
+}
