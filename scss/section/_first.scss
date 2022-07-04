@@ -2,6 +2,10 @@
 	position: relative;
 	padding: 175px 0;
 	min-height: calc(100vh - $header-hight);
+	@media (max-width: 992px) {
+		padding: 60px 0;
+		min-height: unset;
+	}
 	&__body {
 	}
 	&__content {
@@ -16,6 +20,9 @@
 		& + * {
 			margin-top: 30px;
 		}
+		@media (max-width: 992px) {
+			font-size: 40px;
+		}
 	}
 
 	&__text {
@@ -24,6 +31,9 @@
 		color: #484848;
 		& + * {
 			margin-top: 53px;
+			@media (max-width: 992px) {
+				margin-top: 30px;
+			}
 		}
 	}
 
@@ -45,5 +55,10 @@
 		width: 100%;
 		height: 100%;
 		z-index: -1;
+		@media (max-width: 992px) {
+			img {
+				opacity: 0.5;
+			}
+		}
 	}
 }

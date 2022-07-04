@@ -4,6 +4,9 @@ body {
 	font-size: 1.25rem;
 	font-weight: 400;
 	color: #424242;
+	@media (max-width: 992px) {
+		font-size: 1rem;
+	}
 }
 
 /*--- Utility ---*/
@@ -60,10 +63,20 @@ a.btn {
 		color: #01996d;
 		background: #fff;
 	}
+	@media (max-width: 992px) {
+		min-width: unset;
+		min-height: unset;
+		padding: 15px;
+	}
 }
 .btn--small {
 	min-height: 51px;
 	min-width: 183px;
+	@media (max-width: 992px) {
+		min-width: unset;
+		min-height: unset;
+		padding: 15px;
+	}
 }
 .--ibg {
 	position: relative;
@@ -89,4 +102,7 @@ a.btn {
 	font-size: 50px;
 	line-height: 157%;
 	color: #01996d;
+	@media (max-width: 992px) {
+		font-size: 35px;
+	}
 }
