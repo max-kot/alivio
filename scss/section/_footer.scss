@@ -2,12 +2,18 @@
 	background-color: #245852;
 	padding-top: 104.76px;
 	padding-bottom: 144px;
+	@media (max-width: 992px) {
+		padding: 50px 0;
+	}
 	&__body {
 	}
 
 	&__logo {
 		& + * {
 			margin-top: 74.52px;
+			@media (max-width: 992px) {
+				margin-top: 35px;
+			}
 		}
 	}
 
@@ -23,6 +29,9 @@
 		font-weight: 500;
 		font-size: 25px;
 		line-height: calc(30 / 25 * 100%);
+		@media (max-width: 992px) {
+			font-size: 18px;
+		}
 	}
 
 	&__item {
@@ -30,6 +39,9 @@
 		opacity: 0.8;
 		& + * {
 			margin-top: 60px;
+			@media (max-width: 992px) {
+				margin-top: 15px;
+			}
 		}
 		&:hover {
 			opacity: 1;

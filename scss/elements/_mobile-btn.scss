@@ -1,0 +1,59 @@
+.mobile-btn {
+	// Reset for button
+	cursor: pointer;
+	padding: 0;
+	border: 0;
+	background: transparent;
+
+	// Icon styles
+	position: relative;
+	z-index: 55;
+	width: 40px;
+	height: 30px;
+	justify-content: center;
+	align-items: center;
+	display: none;
+	@media (max-width: 992px) {
+		display: flex;
+	}
+
+	&__icon {
+		display: block;
+		position: relative;
+		width: 40px;
+		height: 5px;
+		background-color: #01996d;
+		&::before,
+		&::after {
+			position: absolute;
+			content: "";
+			display: block;
+			width: 40px;
+			height: 5px;
+			background-color: #01996d;
+			transition: all 0.3s;
+		}
+		&::before {
+			left: 0;
+			top: 10px;
+		}
+		&::after {
+			left: 0;
+			top: -10px;
+		}
+	}
+}
+// Close
+.mobile-btn__icon.active {
+	background-color: transparent;
+}
+.mobile-btn__icon.active::before {
+	transform: rotate(45deg);
+	top: 0;
+	transition: all 0.3s;
+}
+.mobile-btn__icon.active::after {
+	transform: rotate(-45deg);
+	top: 0;
+	transition: all 0.3s;
+}
